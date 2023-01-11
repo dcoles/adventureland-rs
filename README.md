@@ -1,5 +1,13 @@
 # AdventureLand.rs
 
+A proof of concept showing how to use Rust code for [Adventure Land](https://adventure.land/).
+
+## Building
+
+```
+wasm-pack build --target web --no-typescript
+```
+
 ## Loader
 
 ```javascript
@@ -18,4 +26,15 @@
     safe_log(e.toString(), 'red')
   }
 })();
+```
+
+## Serving
+
+The generated `.js` and `.wasm` files need to be served via a HTTP server
+to be usable. The easiest way is to use the provided small HTTP server
+that only listens on your computer's local IP (`127.0.0.1`).
+
+```
+cd pkg
+python ../code_server.py
 ```
