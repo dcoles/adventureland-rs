@@ -5,6 +5,7 @@ A proof of concept showing how to use Rust code for [Adventure Land](https://adv
 ## Building
 
 ```
+cargo install wasm-pack
 wasm-pack build --target web --no-typescript
 ```
 
