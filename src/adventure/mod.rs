@@ -4,8 +4,7 @@ pub mod sys;
 pub mod character;
 pub mod skills;
 pub mod target;
-
-use std::borrow::Cow;
+pub mod smart;
 
 use serde_json::Value;
 use wasm_bindgen::{JsValue, UnwrapThrowExt};

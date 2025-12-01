@@ -6,7 +6,7 @@ use wasm_bindgen::prelude::*;
 extern {
     pub type Target;
 
-    pub fn get_nearest_monster() -> Option<Target>;
+    pub fn get_nearest_monster(args: &JsValue) -> Option<Target>;
     pub fn get_target() -> Option<Target>;
 
     #[wasm_bindgen(method, getter)]
